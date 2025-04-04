@@ -43,6 +43,20 @@ The baseline for running your own localhost empire. Well documented on the offic
 - Download [Balena Etcher](https://etcher.balena.io/) to copy the iso to a bootable usb stick
 - plug it in and run it
 - ⚠️ make sure you use your final IP Range when installing. Changing it, especially after clustering your proxmox hosts is a pain and usually requires reinstalling
+- repeat for all machines
+
+### Cluster configuration
+- Connect to one of your machines, if you named them in order (like pve01, pve02, etc) to the first one, through the web ui: https://your-ip:8006
+- Click on the top node in the treeview (Datacenter) then on Cluster in the main view
+- Create a cluster (give it an appropriate name, leave everything else as is) 
+- Once it is created, copy the Join Information
+- Connect to the next machine, repeat until you are in the cluster menu
+- Click "Join Cluster" and paste the copied join information
+- ⚠️ don't do this last step to fast on multiple machines as it seems to mess up the joining and ends with machines not being able to join
+
+The result is a cluster; you can now connect to any of the machines and administer them all from there, migrate vms and a lot more.
+
+[Official Docs](https://pve.proxmox.com/wiki/Cluster_Manager)
 
 ## K3s
 
