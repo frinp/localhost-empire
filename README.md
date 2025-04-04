@@ -1,11 +1,12 @@
 <h1 align="center" style="border-bottom: none">
-  <img src="https://github.com/user-attachments/assets/95fc6a5c-3941-43b1-8e0e-5a7dede97407"/><br>
+  <img src="https://github.com/user-attachments/assets/bcd43211-d818-43a5-95fd-0b12b9c0123b"/><br>
 
 <p align="center">A <a href="https://github.com/frinp">frinp</a> home cluster project.</p>
 </h1>
 <h3></h3>
 
 ---
+
 
 # Localhost Empire
 
